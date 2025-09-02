@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Produkty Sluxer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .product {
+      margin: 15px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background-color: #3498db;
+      color: white;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #2980b9;
+    }
+    .sub-buttons {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Product Documents</h1>
+
+  <div class="product">
+    <button class="btn" onclick="toggleMenu('home14')">Home 14</button>
+    <div id="home14" class="sub-buttons">
+      <a href="Home_14_karta_produktu.pdf" target="_blank" class="btn">Datasheet (PL)</a>
+      <a href="Home_14_karta_produktu_EN.pdf" target="_blank" class="btn">Datasheet (EN)</a>
+      <a href="instrukcja_home_16.pdf" target="_blank" class="btn">Manual</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <button class="btn" onclick="toggleMenu('home16')">Home 16</button>
+    <div id="home16" class="sub-buttons">
+      <a href="Home_16_karta_produktu.pdf" target="_blank" class="btn">Datasheet (PL)</a>
+      <a href="Home_16_karta_produktu_EN.pdf" target="_blank" class="btn">Datasheet (EN)</a>
+      <a href="instrukcja_home_16.pdf" target="_blank" class="btn">Manual</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <button class="btn" onclick="toggleMenu('home28')">Home 28</button>
+    <div id="home28" class="sub-buttons">
+      <a href="Home_28_karta_produktu.pdf" target="_blank" class="btn">Datasheet (PL)</a>
+      <a href="Home_28_karta_produktu_EN.pdf" target="_blank" class="btn">Datasheet (EN)</a>
+      <a href="instrukcja_home_32.pdf" target="_blank" class="btn">Manual</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <button class="btn" onclick="toggleMenu('home32')">Home 32</button>
+    <div id="home32" class="sub-buttons">
+      <a href="Home_32_karta_produktu.pdf" target="_blank" class="btn">Datasheet (PL)</a>
+      <a href="Home_32_karta_produktu_EN.pdf" target="_blank" class="btn">Datasheet (EN)</a>
+      <a href="instrukcja_home_32.pdf" target="_blank" class="btn">Manual</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu(id) {
+      let menu = document.getElementById(id);
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
+
