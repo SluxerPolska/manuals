@@ -3,23 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Sluxer Polska</title>
-  <style>
+  <link rel="icon" type="image/png" href="image/favicon.png">
+ <style>
     body {
       font-family: Arial, sans-serif;
       background: #f7f7f7;
-      text-align: center;
       padding: 40px;
     }
     h1 {
-      margin-bottom: 30px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .card img {
+      max-width: 100%;
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
     }
     .btn {
       display: inline-block;
-      padding: 15px 30px;
-      margin: 10px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
       background-color: #3498db;
       color: white;
       text-decoration: none;
@@ -32,10 +61,30 @@
 </head>
 <body>
   <h1>Wybierz Produkt</h1>
-  <a href="Home14/" class="btn">Home 14</a>
-  <a href="Home16/" class="btn">Home 16</a>
-  <a href="Home28/" class="btn">Home 28</a>
-  <a href="Home32/" class="btn">Home 32</a>
+
+  <div class="grid">
+
+
+    <div class="card">
+      <img src="Home16/home16.png" alt="Home 16">
+      <div class="card-title">Home 16</div>
+      <a href="Home16/" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <img src="Home28/home28.png" alt="Home 28">
+      <div class="card-title">Home 28</div>
+      <a href="Home28/" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+      <img src="Home32/home32.png" alt="Home 32">
+      <div class="card-title">Home 32</div>
+      <a href="Home32/" class="btn">Open</a>
+    </div>
+  </div>
+
 </body>
 </html>
+
 
