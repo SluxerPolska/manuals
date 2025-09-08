@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sluxer Home - Inwertery</title>
+  <link rel="icon" type="image/png" href="../image/favicon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .card img {
+      max-width: 100%;
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .card img:hover {
+      transform: scale(1.1);
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .details {
+      font-size: 14px;
+      color: #555;
+      text-align: left;
+    }
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+    .lightbox img {
+      margin: auto;
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+    }
+    .lightbox:target {
+      display: block;
+    }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Inwertery</h1>
+
+<div style="text-align:center; margin-bottom:20px;">
+  <input 
+    type="text" 
+    id="searchBox" 
+    placeholder="Wyszukaj inwerter..." 
+    style="padding:10px; width:60%; font-size:16px; border-radius:6px; border:1px solid #ccc;"
+  >
+</div>
+
+
+
+  <div class="grid" id="inverterGrid">
+
+    <div class="card" data-search="growatt spf tl">
+      <a href="#growatt-spf"><img src="images/growatt-spf.png" alt="Growatt SPF"></a>
+      <div class="card-title">Growatt SPF TL</div>
+      <div class="details">
+        <b>Protocol:</b> Growatt BMS CAN-Bus-protocol-low-voltage<br>
+        <b>Version:</b> V1.05<br>
+        <b>Mode:</b> CAN<br>
+        <b>Baud:</b> 500K<br>
+        <b>Models:</b> SPF 2000-5000TL HVM-WPV-P
+      </div>
+    </div>
+    
+     <div class="card" data-search="growatt spf kt">
+      <a href="#growatt-spf-2"><img src="images/growatt-spf-2.png" alt="Growatt SPF"></a>
+      <div class="card-title">Growatt SPF KT</div>
+      <div class="details">
+        <b>Protocol:</b> Growatt BMS CAN-Bus-protocol-low-voltage<br>
+        <b>Version:</b> V1.05<br>
+        <b>Mode:</b> CAN<br>
+        <b>Baud:</b> 500K<br>
+        <b>Models:</b> SPF 5/6/8/10KT HVM
+      </div>
+    </div>
+    
+    
+     <div class="card" data-search="growatt wit">
+      <a href="#growatt-wit"><img src="images/growatt-wit.jpg" alt="Growatt SPF"></a>
+      <div class="card-title">Growatt WIT</div>
+      <div class="details">
+        <b>Protocol:</b> Growatt BMS CAN-Bus-protocol-low-voltage<br>
+        <b>Version:</b> V1.05<br>
+        <b>Mode:</b> CAN<br>
+        <b>Baud:</b> 500K<br>
+        <b>Models:</b> WIT 4-15K-HU
+      </div>
+    </div>
+
+    <div class="card" data-search="victron can-bus_bms_protocol multiplus-ii">
+      <a href="#victron"><img src="images/victron.png" alt="Victron"></a>
+      <div class="card-title">Victron</div>
+      <div class="details">
+        <b>Protocol:</b> can-bus_bms_protocol<br>
+        <b>Version:</b> V1.0<br>
+        <b>Mode:</b> CAN<br>
+        <b>Baud:</b> 500K<br>
+        <b>Models:</b> MultiPLUS-II
+      </div>
+    </div>
+
+     <div class="card" data-search="deye sun sg05 sg05lp3">
+      <a href="#deye-sg05"><img src="images/Deye-SUN-SG05LP3.png" alt="Deye SUN 5-12k SG04LP3"></a>
+      <div class="card-title">Deye SUN</div>
+      <div class="details">
+        <b>Protocol:</b> Pylontech-CAN<br>
+        <b>Version:</b> V1.3<br>
+        <b>Mode:</b> CAN<br>
+        <b>Baud:</b> 500K<br>
+        <b>Models:</b> SUN 8-20k SG05LP3
+      </div>
+    </div>    
+    
+     <div class="card" data-search="deye sun sg04 sg04lp3">
+      <a href="#deye-sg04"><img src="images/deye-sun-5-12k-sg04lp3.png" alt="Deye SUN 5-12k SG04LP3"></a>
+      <div class="card-title">Deye SUN</div>
+      <div class="details">
+        <b>Protocol:</b> Pylontech-CAN<br>
+        <b>Version:</b> V1.3<br>
+        <b>Mode:</b> CAN<br>
+        <b>Baud:</b> 500K<br>
+        <b>Models:</b> SUN 5-12k SG04LP3
+      </div>
+    </div>
+    
+     <div class="card" data-search="deye sun sg03 sg04lp3">
+      <a href="#deye-sg03"><img src="images/deye-sun-3-6-5k-2.png" alt="Deye SUN 3.6-5k SG03LP1"></a>
+      <div class="card-title">Deye SUN</div>
+      <div class="details">
+        <b>Protocol:</b> Pylontech-CAN<br>
+        <b>Version:</b> V1.3<br>
+        <b>Mode:</b> CAN<br>
+        <b>Baud:</b> 500K<br>
+        <b>Models:</b> SUN 3.6-5k SG03LP1
+      </div>
+    </div>
+    
+    
+    <div class="card" data-search="goodwe es">
+      <a href="#goodwe-es"><img src="images/goodwe-es.png" alt="Goodwe ES 3.6-5k"></a>
+      <div class="card-title">Goodwe ES</div>
+      <div class="details">
+        <b>Protocol:</b> Goodwe Communication Protocol<br>
+        <b>Version:</b> V1.5<br>
+        <b>Mode:</b> CAN<br>
+        <b>Baud:</b> 500K<br>
+        <b>Models:</b> ES 3.6-5k
+      </div>
+    </div>
+
+
+   <div class="card" data-search="sofar hyd es">
+      <a href="#sofar-hyd"><img src="images/Sofar-HYD-3-6k.png" alt="Sofar HYD 3-6k ES"></a>
+      <div class="card-title">SOFAR HYD</div>
+      <div class="details">
+        <b>Protocol:</b> SOFAR Communication Protocol<br>
+        <b>Version:</b> V1.0<br>
+        <b>Mode:</b> CAN<br>
+        <b>Baud:</b> 500K<br>
+        <b>Models:</b> HYD 3000-6000 ES
+      </div>
+    </div>
+
+    <div class="card" data-search="sma sunny island">
+    <a href="#sma-sunny-island"><img src="images/sma-sunny-island.png" alt="SMA Sunny Island "></a>
+    <div class="card-title">SMA Sunny Island</div>
+    <div class="details">
+      <b>Protocol:</b> FSS-ConnectingBat<br>
+      <b>Version:</b> V2.0<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> Sunny Island 6.0H/8.0H-13
+    </div>
+  </div>
+
+  <div class="card" data-search="solis ginlong rhi">
+    <a href="#solis-rhi"><img src="images/solis-rhi-5k-48es-5g.jpg" alt="Solis RHI "></a>
+    <div class="card-title">Solis RHI</div>
+    <div class="details">
+      <b>Protocol:</b> Ginlong CAN<br>
+      <b>Version:</b> V1.0<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> RHI-(3-6)K-48ES-5G
+    </div>
+  </div>
+    
+
+  <div class="card" data-search="sungrow sh">
+    <a href="#sungrow-sh"><img src="images/sungrow-sh.png" alt="Sungrow SH"></a>
+    <div class="card-title">Sungrow SH</div>
+    <div class="details">
+      <b>Protocol:</b> Pylontech CAN<br>
+      <b>Version:</b> V1.3<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> SH 3.6-5k-30
+    </div>
+  </div>
+
+  <div class="card" data-search="lux luxpowertek sna">
+    <a href="#luxpowertek-sna"><img src="images/luxpowertek-sna.png" alt="Luxpowertek SNA"></a>
+    <div class="card-title">Luxpowertek SNA</div>
+    <div class="details">
+      <b>Protocol:</b> Luxpowertek CAN<br>
+      <b>Version:</b> V1.0<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> SNA 3-6k
+      </div>
+  </div>
+
+  <div class="card" data-search="livoltek gf1 hp1">
+    <a href="#livoltek-gf1"><img src="images/GF1-6KS2.png" alt="Livoltek GF1"></a>
+    <div class="card-title">Livoltek GF1 / HP1</div>
+    <div class="details">
+      <b>Protocol:</b> Livoltek CAN<br>
+      <b>Version:</b> V1.0<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> GF1 3.6k-6k S2 / HP1-3-6kW-S2
+      </div>
+  </div>
+
+  <div class="card" data-search="livoltek gf1 hp1">
+    <a href="#livoltek-gf1-16"><img src="images/GF1-16KS2.png" alt="Livoltek GF1"></a>
+    <div class="card-title">Livoltek GF1 / HP1</div>
+    <div class="details">
+      <b>Protocol:</b> Livoltek CAN / Pylontech-CAN<br>
+      <b>Version:</b> V1.0<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> GF1 11k-16k S2 / HP1-7.5-16kW-S2
+      </div>
+  </div>
+
+
+
+
+  <div class="card" data-search="livoltek hyper">
+    <a href="#livoltek-hyper"><img src="images/hyper-3-6k.png" alt="Livoltek Hyper"></a>
+    <div class="card-title">Livoltek Hyper</div>
+    <div class="details">
+      <b>Protocol:</b> Livoltek CAN / Pylontech-CAN<br>
+      <b>Version:</b> V1.0<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> Hyper 3000-6000
+      </div>
+  </div>
+
+
+  <div class="card" data-search="sorotec revo revo-iii revo 3">
+    <a href="#sorotec-revo-iii"><img src="images/revo-iii.jpg" alt="Sorotec Revo"></a>
+    <div class="card-title">Sorotec Revo III </div>
+    <div class="details">
+      <b>Protocol:</b>Pylontech-CAN<br>
+      <b>Version:</b> V1.3<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> Revo III 5.5k-8k
+      </div>
+  </div>
+
+
+  <div class="card" data-search="afore af af1 af3">
+    <a href="#afore-af"><img src="images/afore-af1_af3.png" alt="Afore AF"></a>
+    <div class="card-title">Afore AF </div>
+    <div class="details">
+      <b>Protocol:</b>Luxpowertek-CAN<br>
+      <b>Version:</b> V1.0<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> AF1-AF6-SL
+      </div>
+  </div>
+
+
+  <div class="card" data-search="must pv1800 pv1900">
+    <a href="#must-pv"><img src="images/must-pv19.jpg" alt="MUST PV"></a>
+    <div class="card-title">MUST PV </div>
+    <div class="details">
+      <b>Protocol:</b>Pylontech-CAN<br>
+      <b>Version:</b> V1.3<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> PV1800, PV1900, PH1800, PH1900(wszystkie wersje inwerterów współpracujące z bateriami 48V)
+      </div>
+  </div>
+
+
+
+  <div class="card" data-search="invt xd3ktl xd3k6tl xd4ktl xd4k6tl xd5ktl xd5k6tl">
+    <a href="#invt-xd"><img src="images/XD3_6-6kW_1.png" alt="INVT"></a>
+    <div class="card-title">INVT </div>
+    <div class="details">
+      <b>Protocol:</b>Pylontech-CAN<br>
+      <b>Version:</b> V1.3<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> XD3-6KTL
+      </div>
+  </div>
+
+
+
+  <div class="card" data-search="voltronic power">
+    <a href="#voltronic-infinisolar"><img src="images/voltronic-infini-solar.jpg" alt="Voltronic Power"></a>
+    <div class="card-title">Voltronic Power </div>
+    <div class="details">
+      <b>Protocol:</b>Voltronic<br>
+      <b>Version:</b> V1.0<br>
+      <b>Mode:</b> RS485<br>
+      <b>Baud:</b> 9600<br>
+      <b>Models:</b> InfiniSolar II, III, IV
+      </div>
+  </div>
+
+  <div class="card" data-search="srne asf asp asf48100s200 asp48100s200 hf4850s80 hes4855s100">
+    <a href="#srne-asp-asf"><img src="images/SRNE_ASF48100S80-H.jpg" alt="SRNE"></a>
+    <div class="card-title">SRNE</div>
+    <div class="details">
+      <b>Protocol:</b>PACE<br>
+      <b>Version:</b> V1.0<br>
+      <b>Mode:</b> RS485<br>
+      <b>Baud:</b> 9600<br>
+      <b>Models:</b> ASF48100S200 ASP48100S200 HF4850S80 HF4850S80 HES4855S100
+      </div>
+  </div>
+
+  <div class="card" data-search="mpp solar mpi">
+    <a href="#mpp-mpi-12"><img src="images/mpp_mpi_12.png" alt="MPP Solar"></a>
+    <div class="card-title">MPP Solar</div>
+    <div class="details">
+      <b>Protocol:</b>Voltronic<br>
+      <b>Version:</b> V1.0<br>
+      <b>Mode:</b> RS485<br>
+      <b>Baud:</b> 9600<br>
+      <b>Models:</b> MPI 12-15kW WP
+      </div>
+  </div>
+
+    <div class="card" data-search="mpp solar mpi">
+    <a href="#mpp-mpi-10"><img src="images/mpp-solar-10.jpg" alt="MPP Solar"></a>
+    <div class="card-title">MPP Solar</div>
+    <div class="details">
+      <b>Protocol:</b>Voltronic<br>
+      <b>Version:</b> V1.0<br>
+      <b>Mode:</b> RS485<br>
+      <b>Baud:</b> 9600<br>
+      <b>Models:</b> MPI 5.5-10kW WP
+      </div>
+  </div>
+
+
+  <div class="card" data-search="hoymiles hys has">
+    <a href="#hoymiles-hys-has"><img src="images/hoymiles_hys_has.png" alt="HOYMILES"></a>
+    <div class="card-title">HOYMILES HYS/HAS </div>
+    <div class="details">
+      <b>Protocol:</b>Pylontech-CAN<br>
+      <b>Version:</b> V1.3<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> HYS (3.0-6.0kW), HAS (3.0-6.0kW)
+      </div>
+  </div>
+
+  <div class="card" data-search="hoymiles hit">
+    <a href="#hoymiles-hit"><img src="images/hoymiles_hit.png" alt="HOYMILES"></a>
+    <div class="card-title">HOYMILES HIT </div>
+    <div class="details">
+      <b>Protocol:</b>Pylontech-CAN<br>
+      <b>Version:</b> V1.3<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> HIT (5.0-20kW)
+      </div>
+  </div>
+
+
+  <div class="card" data-search="solplanet asw s2">
+    <a href="#solplanet-asw"><img src="images/SOLPLANET-ASW-3-6-H-S2.png" alt="Solplanet"></a>
+    <div class="card-title">Solplanet ASW </div>
+    <div class="details">
+      <b>Protocol:</b>Pylontech-CAN<br>
+      <b>Version:</b> V1.3<br>
+      <b>Mode:</b> CAN<br>
+      <b>Baud:</b> 500K<br>
+      <b>Models:</b> ASW (3-6kW)H S2
+      </div>
+  </div>
+
+
+  <div class="card" data-search="anenji 6.2kw anj">
+    <a href="#anenji"><img src="images/anenji.jpeg" alt="Anenji"></a>
+    <div class="card-title">Anenji</div>
+    <div class="details">
+      <b>Protocol:</b>Pylontech<br>
+      <b>Version:</b> V1.0<br>
+      <b>Mode:</b> RS485<br>
+      <b>Baud:</b> 9600<br>
+      <b>Models:</b> ANJ-5kW ANJ-6200 ANJ-HHS-8500 ANJ-HHS-11kW
+      </div>
+  </div>
+
+
+  </div>
+
+  <!-- Lightbox Images -->
+  <div id="growatt-spf" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/growatt-spf.png" alt="Growatt SPF">
+  </div>
+  
+   <div id="growatt-spf-2" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/growatt-spf-2.png" alt="Growatt SPF">
+  </div>
+  
+  <div id="growatt-wit" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/growatt-wit.jpg" alt="Growatt SPF">
+  </div>
+
+  <div id="victron" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/victron.png" alt="Victron">
+  </div>
+
+  <div id="deye-sg05" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/Deye-SUN-SG05LP3.png" alt="Deye SUN">
+  </div>
+
+  <div id="deye-sg04" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/deye-sun-5-12k-sg04lp3.png" alt="Deye SUN">
+  </div>
+  
+  <div id="deye-sg03" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/deye-sun-3-6-5k-2.png" alt="Deye SUN">
+  </div>
+  
+   <div id="goodwe-es" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/goodwe-es.png" alt="Goodwe ES">
+  </div>
+  
+  <div id="sofar-hyd" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/Sofar-HYD-3-6k.png" alt="Sofar HYD">
+  </div>
+
+  <div id="sma-sunny-island" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/sma-sunny-island.png" alt="SMA Sunny Island">
+  </div>
+  
+  <div id="solis-rhi" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/solis-rhi-5k-48es-5g.jpg" alt="Solis RHI">
+  </div>
+
+  <div id="sungrow-sh" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/sungrow-sh.png" alt="Sungrow SH">
+  </div>
+
+  <div id="luxpowertek-sna" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/luxpowertek-sna.png" alt="Luxpowertek SNA">
+  </div>
+
+  <div id="livoltek-gf1" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/GF1-6KS2.png" alt="Livoltek GF1">
+  </div>
+
+  <div id="livoltek-gf1-16" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/GF1-16KS2.png" alt="Livoltek GF1">
+  </div>
+
+  <div id="livoltek-hyper" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/hyper-3-6k.png" alt="Livoltek Hyper">
+  </div>
+
+  <div id="sorotec-revo-iii" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/revo-iii.jpg" alt="Sorotec Revo">
+  </div>
+
+  <div id="afore-af" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/afore-af1_af3.png" alt="Afore AF">
+  </div>
+
+  <div id="must-pv" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/must-pv19.jpg" alt="MUST PV">
+  </div>
+
+  <div id="invt-xd" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/XD3_6-6kW_1.png" alt="INVT">
+  </div>
+
+  <div id="voltronic-infinisolar" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/voltronic-infini-solar.jpg" alt="Voltronic Power">
+  </div>
+
+  <div id="srne-asp-asf" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/SRNE_ASF48100S80-H.jpg" alt="SRNE">
+  </div>
+
+  <div id="mpp-mpi-12" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/mpp_mpi_12.png" alt="MPP Solar">
+  </div>  
+
+  <div id="mpp-mpi-10" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/mpp-solar-10.jpg" alt="MPP Solar">
+  </div>
+
+  <div id="hoymiles-hys-has" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/hoymiles_hys_has.png" alt="HOYMILES">
+  </div>
+
+  <div id="hoymiles-hit" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/hoymiles_hit.png" alt="HOYMILES">
+  </div>
+
+  <div id="solplanet-asw" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/SOLPLANET-ASW-3-6-H-S2.png" alt="Solplanet">
+  </div>
+
+  <div id="anenji" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="images/anenji.jpeg" alt="Anenji">
+
+<script>
+document.getElementById("searchBox").addEventListener("input", function() {
+  const filter = this.value.toLowerCase().trim();
+  const cards = document.querySelectorAll("#inverterGrid .card");
+  let anyVisible = false;
+
+  cards.forEach(card => {
+    const keywords = card.getAttribute("data-search");
+    if (!filter || (keywords && keywords.includes(filter))) {
+      card.style.display = "grid";
+      anyVisible = true;
+    } else {
+      card.style.display = "none";
+    }
+  });
+
+  // No results message
+  let msg = document.getElementById("noResults");
+  if (!msg) {
+    msg = document.createElement("div");
+    msg.id = "noResults";
+    msg.style.textAlign = "center";
+    msg.style.marginTop = "20px";
+    msg.style.color = "red";
+    msg.innerText = "No results found";
+    document.body.appendChild(msg);
+  }
+  msg.style.display = anyVisible ? "none" : "block";
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const grid = document.getElementById("inverterGrid");
+  if (!grid) return;
+
+  // Collect all cards
+  const cards = Array.from(grid.querySelectorAll(".card"));
+
+  // Sort them by the visible card-title text
+  cards.sort((a, b) => {
+    const titleA = a.querySelector(".card-title").innerText.toLowerCase();
+    const titleB = b.querySelector(".card-title").innerText.toLowerCase();
+    return titleA.localeCompare(titleB);
+  });
+
+  // Re-append in sorted order
+  cards.forEach(card => grid.appendChild(card));
+});
+
+</script>
+
+
+
+
+  
+</body>
+</html>
