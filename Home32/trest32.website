@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home 32</title>
+  <link rel="icon" type="image/png" href="../image/favicon.png">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #6b7280;
+      --primary: #3498db;
+      --primary-hover: #2471a3;
+      --outline: #1b4f72;
+      --card: #f8fafc;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0f14;
+        --fg: #e5e7eb;
+        --muted: #9ca3af;
+        --primary: #4aa9ea;
+        --primary-hover: #3a8ec7;
+        --outline: #8ec5ff;
+        --card: #0f1620;
+        --shadow: rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--fg);
+      margin: 0;
+      padding: 32px 20px 48px;
+      line-height: 1.45;
+      display: grid;
+      place-items: start center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 980px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      margin: 0 0 8px 0;
+    }
+
+    p.subtle {
+      margin: 0 0 24px 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      box-shadow: 0 6px 18px var(--shadow);
+      padding: 16px 16px 20px;
+      margin: 14px 0;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      letter-spacing: 0.2px;
+      margin: 6px 0 12px 6px;
+    }
+
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-align: center;
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: none;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      box-shadow: 0 4px 10px var(--shadow);
+      transition: background 0.18s ease, transform 0.08s ease, box-shadow 0.18s ease;
+      outline: none;
+      user-select: none;
+    }
+
+    .btn:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px var(--shadow);
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid var(--outline);
+      outline-offset: 2px;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+
+    .btn.secondary:hover {
+      background: rgba(52, 152, 219, 0.08);
+    }
+
+    .footer {
+      margin-top: 26px;
+      text-align: center;
+    }
+
+    /* Reduce motion if user prefers */
+    @media (prefers-reduced-motion: reduce) {
+      .btn { transition: none; }
+      .btn:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Home 32</h1>
+      <p class="subtle">Szybki dostęp do dokumentów, certyfikatów i gwarancji • Quick access to docs, certificates and warranty</p>
+    </header>
+
+    <section class="card" aria-labelledby="docs">
+      <h2 id="docs">📄 Dokumenty / Datasheets</h2>
+      <div class="btn-grid">
+        <a class="btn" href="Home_32_karta_produktu.pdf" target="_blank" rel="noopener" aria-label="Karta katalogowa (PL)">Karta Katalogowa</a>
+        <a class="btn" href="Home_32_karta_produktu_EN.pdf" target="_blank" rel="noopener" aria-label="Datasheet in English">Datasheet (EN)</a>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="manuals">
+      <h2 id="manuals">📘 Instrukcje / Manuals</h2>
+      <div class="btn-grid">
+        <a class="btn" href="instrukcja_home_32.pdf" target="_blank" rel="noopener" aria-label="Instrukcja w języku polskim">Instrukcja</a>
+        <a class="btn" href="instrukcja_home_32_EN.pdf" target="_blank" rel="noopener" aria-label="User Manual in English">User Manual</a>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="certs">
+      <h2 id="certs">✅ Certyfikaty / Certificates</h2>
+      <div class="btn-grid">
+        <a class="btn" href="CE_Sluxer_Home_32.pdf" target="_blank" rel="noopener" aria-label="Deklaracja zgodności CE po polsku">CE PL</a>
+        <a class="btn" href="CE_Sluxer_Home_32_EN.pdf" target="_blank" rel="noopener" aria-label="CE Declaration in English">CE EN</a>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="warranty">
+      <h2 id="warranty">🛡️ Gwarancja / Warranty</h2>
+      <div class="btn-grid">
+        <a class="btn" href="../Sluxer_Home_Gwarancja.pdf" target="_blank" rel="noopener" aria-label="Gwarancja po polsku">Gwarancja</a>
+        <a class="btn" href="../Sluxer_Home_Gwarancja_EN.pdf" target="_blank" rel="noopener" aria-label="Warranty in English">Warranty</a>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="other">
+      <h2 id="other">🔗 Pozostałe / Other</h2>
+      <div class="btn-grid">
+        <a class="btn" href="../compatibility/index.html" target="_blank" rel="noopener" aria-label="Lista kompatybilnych inwerterów">Lista Inwerterów</a>
+      </div>
+    </section>
+
+    <div class="footer">
+      <a class="btn secondary" href="../index.html" aria-label="Wróć do strony głównej">⬅ Back</a>
+    </div>
+  </main>
+</body>
+</html>
+
