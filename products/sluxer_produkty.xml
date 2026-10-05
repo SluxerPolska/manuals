@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1">
+  <product>
+    <ID_produktu/>
+    <ID_produktu_rodzica/>
+    <Nazwa_produktu><![CDATA[Sluxer Home 15]]></Nazwa_produktu>
+    <Cena><![CDATA[5000.00]]></Cena>
+    <Cena_regularna><![CDATA[6000.00]]></Cena_regularna>
+    <SKU/>
+    <Stan_magazynowy_produktu><![CDATA[500]]></Stan_magazynowy_produktu>
+    <Atrybuty_produktu/>
+    <Kategoria_produktu><![CDATA[Magazyn energii]]></Kategoria_produktu>
+    <Zdjęcia_produktu><![CDATA[https://www.sluxer.com/sklep/sluxer-home-16-kwh/]]></Zdjęcia_produktu>
+    <Opis><![CDATA[<p>Niskonapięciowy bank energii LiFePO4 z polskim wsparciem technicznym</p>
+<p>Sluxer Home 15 kWh to zaawansowany, niskonapięciowy magazyn energii stworzony z myślą o stabilnym i bezpiecznym zasilaniu domów jednorodzinnych, gospodarstw rolnych oraz małych i średnich przedsiębiorstw. Oferuje ponad 15 kWh pojemności nominalnej przy zachowaniu bezkompromisowego poziomu bezpieczeństwa i długowieczności, pozwalając na maksymalizację autokonsumpcji energii z fotowoltaiki oraz zabezpieczenie obiektu na wypadek przerw w dostawie prądu.</p>
+<p>WAŻNE: Zestaw nie zawiera kabla komunikacyjnego (RJ458) oraz kabla zasilania między falownikiem, a baterią (miedziany LGY 50mm2). Możliwość dokupienia zestawu kabli osobno</p>
+<p>Kluczowe zalety i wyróżniki<br />
+Ponad 8000 cykli pracy (do 20 lat eksploatacji): Zastosowanie ogniw LiFePO4 (litowo-żelazowo-fosforanowych) najwyższej klasy gwarantuje niezawodność, wysoki poziom bezpieczeństwa pożarowego oraz niezwykłą żywotność przy codziennym ładowaniu i rozładowywaniu.</p>
+<p>Rozwiązanie problemu zgłoszeń do OSD: Dostępność wariantów ograniczenia mocy rozładowania pozwala dopasować parametry do wymagań Operatora Sieci Dystrybucyjnej bez konieczności rezygnacji z pojemnego magazynu.</p>
+<p>Skalowalność do 256 kWh: System umożliwia łączenie równoległe do 16 jednostek, niezależnie od ich indywidualnej pojemności (np. 16 kWh + 32 kWh). Możesz zacząć od jednego modułu i sukcesywnie rozbudowywać instalację.</p>
+<p>Wbudowany inteligentny BMS: Automatyczny system zarządzania baterią dba o zrównoważone balansowanie ogniw, zabezpiecza przed przeładowaniem, głębokim rozładowaniem oraz nadmiernym wzrostem temperatury.</p>
+<p>Lokalny serwis i 10 lat gwarancji: Polska marka Sluxer Energy zapewnia pełne wsparcie techniczne na miejscu, szybki dostęp do serwisu i części zamiennych oraz 10-letnią gwarancję producenta.</p>
+<p>Zastosowanie<br />
+Małe i średnie elektrownie fotowoltaiczne (On-Grid): Domy jednorodzinne, warsztaty i małe obiekty przemysłowe optymalizujące zużycie własne energii.</p>
+<p>Instalacje wyspowe (Off-Grid): Niezależne systemy zasilania w lokalizacjach bez dostępu do sieci energetycznej.</p>
+<p>Zasilanie gwarantowane (UPS / Backup): Rezerwowe źródło energii dla kluczowych odbiorników w przypadku awarii sieci.</p>
+<p>Dostępne warianty mocy rozładowania<br />
+Aby ułatwić zgłoszenie magazynu do Operatora Sieci Dystrybucyjnej (OSD), produkt oferowany jest w wariantach o zróżnicowanej mocy rozładowania:</p>
+<p>7,7 kW</p>
+<p>4,6 kW</p>
+<p>3,1 kW</p>
+<p>Uwaga: Moc ładowania zawsze pozostaje na stałym poziomie 7,7 kW.</p>
+<p>Szeroka kompatybilność z inwerterami<br />
+Magazyn energii Sluxer Home 16 kWh wspiera komunikację magistralami CAN oraz RS485 i jest w pełni kompatybilny z wiodącymi na rynku inwerterami niskonapięciowymi:</p>
+<p>Deye: serie SUN 3.6-5k SG03LP1, SUN 5-12k SG04LP3, SUN 8-20k SG05LP3</p>
+<p>Hoymiles: serie HIT (5.0-20kW), HYS (3.0-6.0kW), HAS (3.0-6.0kW)</p>
+<p>Solis: serie RHI-(3-6)K-48ES-5G, S6-EH3P(8-18)K02-NV-YD-L</p>
+<p>Solplanet: seria ASW (3-6kW)H S2</p>
+<p>Growatt: serie SPF (2000-5000TL, 5/6/8/10KT) oraz WIT 4-15K-HU</p>
+<p>Victron Energy: seria MultiPlus-II</p>
+<p>Sofar Solar: seria HYD 3000-6000 ES</p>
+<p>GoodWe: seria ES 3.6-5k</p>
+<p>Afore: seria AF1-AF6-SL</p>
+<p>SMA: Sunny Island 6.0H / 8.0H-13</p>
+<p>Ponadto: Livoltek, Luxpowertek, Sungrow, Voltronic Power, MUST PV, INVT, Qoltec, SRNE, MPP Solar, Sorotec, Anenji, ECOBSS, Solax (X3 Neo)</p>
+<p>Specyfikacja techniczna<br />
+Parametr Wartość<br />
+Pojemność nominalna 15 kWh (292Ah)<br />
+Napięcie nominalne 51,2 V<br />
+Konfiguracja ogniw 16S1P (16 ogniw LiFePO4 3,2 V 314 Ah)<br />
+Maksymalny prąd ładowania/rozładowania 150 A (@25±2°C)<br />
+Napięcie ładowania 57,6 V<br />
+Napięcie odcięcia rozładowania 43,5 V<br />
+Zalecany zakres SOC 10% – 95%<br />
+Żywotność &gt; 8000 cykli pracy<br />
+Interfejsy komunikacyjne CAN, RS485, Bluetooth<br />
+Wymiary (wys. x szer. x gł.) 817 x 412 x 267 mm<br />
+Waga 113 kg (waga zestawu transportowego: ok. 120 kg)<br />
+Obudowa Solidna, metalowa, ergonomiczna<br />
+Klasa szczelności IP20 (do użytku wewnętrznego)<br />
+Temperatura pracy (ładowanie) 0°C ~ 40°C<br />
+Temperatura pracy (rozładowanie) -5°C ~ 40°C<br />
+Temperatura przechowywania -5°C ~ 35°C<br />
+Dopuszczalna wilgotność 5% – 80% RH<br />
+Gwarancja 10 lat<br />
+Niskonapięciowy bank energii LiFePO4 z polskim wsparciem technicznym</p>
+<p>Sluxer Home 15 kWh to zaawansowany, niskonapięciowy magazyn energii stworzony z myślą o stabilnym i bezpiecznym zasilaniu domów jednorodzinnych, gospodarstw rolnych oraz małych i średnich przedsiębiorstw. Oferuje ponad 15 kWh pojemności nominalnej przy zachowaniu bezkompromisowego poziomu bezpieczeństwa i długowieczności, pozwalając na maksymalizację autokonsumpcji energii z fotowoltaiki oraz zabezpieczenie obiektu na wypadek przerw w dostawie prądu.</p>
+<p>WAŻNE: Zestaw nie zawiera kabla komunikacyjnego (RJ458) oraz kabla zasilania między falownikiem, a baterią (miedziany LGY 50mm2). Możliwość dokupienia zestawu kabli osobno</p>
+<p>Kluczowe zalety i wyróżniki<br />
+Ponad 8000 cykli pracy (do 20 lat eksploatacji): Zastosowanie ogniw LiFePO4 (litowo-żelazowo-fosforanowych) najwyższej klasy gwarantuje niezawodność, wysoki poziom bezpieczeństwa pożarowego oraz niezwykłą żywotność przy codziennym ładowaniu i rozładowywaniu.</p>
+<p>Rozwiązanie problemu zgłoszeń do OSD: Dostępność wariantów ograniczenia mocy rozładowania pozwala dopasować parametry do wymagań Operatora Sieci Dystrybucyjnej bez konieczności rezygnacji z pojemnego magazynu.</p>
+<p>Skalowalność do 256 kWh: System umożliwia łączenie równoległe do 16 jednostek, niezależnie od ich indywidualnej pojemności (np. 16 kWh + 32 kWh). Możesz zacząć od jednego modułu i sukcesywnie rozbudowywać instalację.</p>
+<p>Wbudowany inteligentny BMS: Automatyczny system zarządzania baterią dba o zrównoważone balansowanie ogniw, zabezpiecza przed przeładowaniem, głębokim rozładowaniem oraz nadmiernym wzrostem temperatury.</p>
+<p>Lokalny serwis i 10 lat gwarancji: Polska marka Sluxer Energy zapewnia pełne wsparcie techniczne na miejscu, szybki dostęp do serwisu i części zamiennych oraz 10-letnią gwarancję producenta.</p>
+<p>Zastosowanie<br />
+Małe i średnie elektrownie fotowoltaiczne (On-Grid): Domy jednorodzinne, warsztaty i małe obiekty przemysłowe optymalizujące zużycie własne energii.</p>
+<p>Instalacje wyspowe (Off-Grid): Niezależne systemy zasilania w lokalizacjach bez dostępu do sieci energetycznej.</p>
+<p>Zasilanie gwarantowane (UPS / Backup): Rezerwowe źródło energii dla kluczowych odbiorników w przypadku awarii sieci.</p>
+<p>Dostępne warianty mocy rozładowania<br />
+Aby ułatwić zgłoszenie magazynu do Operatora Sieci Dystrybucyjnej (OSD), produkt oferowany jest w wariantach o zróżnicowanej mocy rozładowania:</p>
+<p>7,7 kW</p>
+<p>4,6 kW</p>
+<p>3,1 kW</p>
+<p>Uwaga: Moc ładowania zawsze pozostaje na stałym poziomie 7,7 kW.</p>
+<p>Szeroka kompatybilność z inwerterami<br />
+Magazyn energii Sluxer Home 16 kWh wspiera komunikację magistralami CAN oraz RS485 i jest w pełni kompatybilny z wiodącymi na rynku inwerterami niskonapięciowymi:</p>
+<p>Deye: serie SUN 3.6-5k SG03LP1, SUN 5-12k SG04LP3, SUN 8-20k SG05LP3</p>
+<p>Hoymiles: serie HIT (5.0-20kW), HYS (3.0-6.0kW), HAS (3.0-6.0kW)</p>
+<p>Solis: serie RHI-(3-6)K-48ES-5G, S6-EH3P(8-18)K02-NV-YD-L</p>
+<p>Solplanet: seria ASW (3-6kW)H S2</p>
+<p>Growatt: serie SPF (2000-5000TL, 5/6/8/10KT) oraz WIT 4-15K-HU</p>
+<p>Victron Energy: seria MultiPlus-II</p>
+<p>Sofar Solar: seria HYD 3000-6000 ES</p>
+<p>GoodWe: seria ES 3.6-5k</p>
+<p>Afore: seria AF1-AF6-SL</p>
+<p>SMA: Sunny Island 6.0H / 8.0H-13</p>
+<p>Ponadto: Livoltek, Luxpowertek, Sungrow, Voltronic Power, MUST PV, INVT, Qoltec, SRNE, MPP Solar, Sorotec, Anenji, ECOBSS, Solax (X3 Neo)</p>
+<p>Specyfikacja techniczna<br />
+Parametr Wartość<br />
+Pojemność nominalna 15 kWh (292Ah)<br />
+Napięcie nominalne 51,2 V<br />
+Konfiguracja ogniw 16S1P (16 ogniw LiFePO4 3,2 V 314 Ah)<br />
+Maksymalny prąd ładowania/rozładowania 150 A (@25±2°C)<br />
+Napięcie ładowania 57,6 V<br />
+Napięcie odcięcia rozładowania 43,5 V<br />
+Zalecany zakres SOC 10% – 95%<br />
+Żywotność &gt; 8000 cykli pracy<br />
+Interfejsy komunikacyjne CAN, RS485, Bluetooth<br />
+Wymiary (wys. x szer. x gł.) 817 x 412 x 267 mm<br />
+Waga 113 kg (waga zestawu transportowego: ok. 120 kg)<br />
+Obudowa Solidna, metalowa, ergonomiczna<br />
+Klasa szczelności IP20 (do użytku wewnętrznego)<br />
+Temperatura pracy (ładowanie) 0°C ~ 40°C<br />
+Temperatura pracy (rozładowanie) -5°C ~ 40°C<br />
+Temperatura przechowywania -5°C ~ 35°C<br />
+Dopuszczalna wilgotność 5% – 80% RH<br />
+Gwarancja 10 lat</p>]]></Opis>
+    <Krótki_opis><![CDATA[<p>Niskonapięciowy bank energii LiFePO4 z polskim wsparciem technicznym</p>
+<p>Sluxer Home 15 kWh to zaawansowany, niskonapięciowy magazyn energii stworzony z myślą o stabilnym i bezpiecznym zasilaniu domów jednorodzinnych, gospodarstw rolnych oraz małych i średnich przedsiębiorstw. Oferuje ponad 15 kWh pojemności nominalnej przy zachowaniu bezkompromisowego poziomu bezpieczeństwa i długowieczności, pozwalając na maksymalizację autokonsumpcji energii z fotowoltaiki oraz zabezpieczenie obiektu na wypadek przerw w dostawie prądu.</p>
+<p>WAŻNE: Zestaw nie zawiera kabla komunikacyjnego (RJ458) oraz kabla zasilania między falownikiem, a baterią (miedziany LGY 50mm2). Możliwość dokupienia zestawu kabli osobno</p>
+<p>Kluczowe zalety i wyróżniki<br />
+Ponad 8000 cykli pracy (do 20 lat eksploatacji): Zastosowanie ogniw LiFePO4 (litowo-żelazowo-fosforanowych) najwyższej klasy gwarantuje niezawodność, wysoki poziom bezpieczeństwa pożarowego oraz niezwykłą żywotność przy codziennym ładowaniu i rozładowywaniu.</p>
+<p>Rozwiązanie problemu zgłoszeń do OSD: Dostępność wariantów ograniczenia mocy rozładowania pozwala dopasować parametry do wymagań Operatora Sieci Dystrybucyjnej bez konieczności rezygnacji z pojemnego magazynu.</p>
+<p>Skalowalność do 256 kWh: System umożliwia łączenie równoległe do 16 jednostek, niezależnie od ich indywidualnej pojemności (np. 16 kWh + 32 kWh). Możesz zacząć od jednego modułu i sukcesywnie rozbudowywać instalację.</p>
+<p>Wbudowany inteligentny BMS: Automatyczny system zarządzania baterią dba o zrównoważone balansowanie ogniw, zabezpiecza przed przeładowaniem, głębokim rozładowaniem oraz nadmiernym wzrostem temperatury.</p>
+<p>Lokalny serwis i 10 lat gwarancji: Polska marka Sluxer Energy zapewnia pełne wsparcie techniczne na miejscu, szybki dostęp do serwisu i części zamiennych oraz 10-letnią gwarancję producenta.</p>
+<p>Zastosowanie<br />
+Małe i średnie elektrownie fotowoltaiczne (On-Grid): Domy jednorodzinne, warsztaty i małe obiekty przemysłowe optymalizujące zużycie własne energii.</p>
+<p>Instalacje wyspowe (Off-Grid): Niezależne systemy zasilania w lokalizacjach bez dostępu do sieci energetycznej.</p>
+<p>Zasilanie gwarantowane (UPS / Backup): Rezerwowe źródło energii dla kluczowych odbiorników w przypadku awarii sieci.</p>
+<p>Dostępne warianty mocy rozładowania<br />
+Aby ułatwić zgłoszenie magazynu do Operatora Sieci Dystrybucyjnej (OSD), produkt oferowany jest w wariantach o zróżnicowanej mocy rozładowania:</p>
+<p>7,7 kW</p>
+<p>4,6 kW</p>
+<p>3,1 kW</p>
+<p>Uwaga: Moc ładowania zawsze pozostaje na stałym poziomie 7,7 kW.</p>
+<p>Szeroka kompatybilność z inwerterami<br />
+Magazyn energii Sluxer Home 16 kWh wspiera komunikację magistralami CAN oraz RS485 i jest w pełni kompatybilny z wiodącymi na rynku inwerterami niskonapięciowymi:</p>
+<p>Deye: serie SUN 3.6-5k SG03LP1, SUN 5-12k SG04LP3, SUN 8-20k SG05LP3</p>
+<p>Hoymiles: serie HIT (5.0-20kW), HYS (3.0-6.0kW), HAS (3.0-6.0kW)</p>
+<p>Solis: serie RHI-(3-6)K-48ES-5G, S6-EH3P(8-18)K02-NV-YD-L</p>
+<p>Solplanet: seria ASW (3-6kW)H S2</p>
+<p>Growatt: serie SPF (2000-5000TL, 5/6/8/10KT) oraz WIT 4-15K-HU</p>
+<p>Victron Energy: seria MultiPlus-II</p>
+<p>Sofar Solar: seria HYD 3000-6000 ES</p>
+<p>GoodWe: seria ES 3.6-5k</p>
+<p>Afore: seria AF1-AF6-SL</p>
+<p>SMA: Sunny Island 6.0H / 8.0H-13</p>
+<p>Ponadto: Livoltek, Luxpowertek, Sungrow, Voltronic Power, MUST PV, INVT, Qoltec, SRNE, MPP Solar, Sorotec, Anenji, ECOBSS, Solax (X3 Neo)</p>
+<p>Specyfikacja techniczna<br />
+Parametr Wartość<br />
+Pojemność nominalna 15 kWh (292Ah)<br />
+Napięcie nominalne 51,2 V<br />
+Konfiguracja ogniw 16S1P (16 ogniw LiFePO4 3,2 V 314 Ah)<br />
+Maksymalny prąd ładowania/rozładowania 150 A (@25±2°C)<br />
+Napięcie ładowania 57,6 V<br />
+Napięcie odcięcia rozładowania 43,5 V<br />
+Zalecany zakres SOC 10% – 95%<br />
+Żywotność &gt; 8000 cykli pracy<br />
+Interfejsy komunikacyjne CAN, RS485, Bluetooth<br />
+Wymiary (wys. x szer. x gł.) 817 x 412 x 267 mm<br />
+Waga 113 kg (waga zestawu transportowego: ok. 120 kg)<br />
+Obudowa Solidna, metalowa, ergonomiczna<br />
+Klasa szczelności IP20 (do użytku wewnętrznego)<br />
+Temperatura pracy (ładowanie) 0°C ~ 40°C<br />
+Temperatura pracy (rozładowanie) -5°C ~ 40°C<br />
+Temperatura przechowywania -5°C ~ 35°C<br />
+Dopuszczalna wilgotność 5% – 80% RH<br />
+Gwarancja 10 lat</p>]]></Krótki_opis>
+    <EAN_produktu><![CDATA[5904031849902]]></EAN_produktu>
+    <Url><![CDATA[https://www.sluxer.com/sklep/sluxer-home-16-kwh/]]></Url>
+  </product>
+  <product>
+    <ID_produktu/>
+    <ID_produktu_rodzica/>
+    <Nazwa_produktu><![CDATA[Sluxer Home 30]]></Nazwa_produktu>
+    <Cena><![CDATA[1000.00]]></Cena>
+    <Cena_regularna><![CDATA[12000.00]]></Cena_regularna>
+    <SKU/>
+    <Stan_magazynowy_produktu><![CDATA[500]]></Stan_magazynowy_produktu>
+    <Atrybuty_produktu/>
+    <Kategoria_produktu><![CDATA[Magazyn energii]]></Kategoria_produktu>
+    <Zdjęcia_produktu><![CDATA[https://www.sluxer.com/sklep/sluxer-home-32-kwh/]]></Zdjęcia_produktu>
+    <Opis><![CDATA[<p>Magazyn Energii Sluxer Home 30 kWh<br />
+Niskonapięciowy bank energii LiFePO4 z polskim wsparciem technicznym</p>
+<p>Sluxer Home 30 kWh to wysokowydajny, niskonapięciowy magazyn energii o bardzo dużej pojemności, zaprojektowany z myślą o wymagających gospodarstwach domowych, gospodarstwach rolnych oraz obiektach komercyjnych i przemysłowych. Urządzenie pozwala efektywnie gromadzić dzienną produkcję z instalacji fotowoltaicznych, gwarantując niezależność energetyczną, wysoki poziom bezpieczeństwa oraz ciągłość zasilania w sytuacjach awaryjnych.</p>
+<p>WAŻNE: Zestaw nie zawiera kabla komunikacyjnego (RJ458) oraz kabla zasilania między falownikiem, a baterią (miedziany LGY 50mm2). Możliwość dokupienia zestawu kabli osobno</p>
+<p>Kluczowe zalety i wyróżniki<br />
+Duża pojemność (30 kWh / 584 Ah): Wystarczająca, aby zmagazynować energię wytworzoną przez instalację fotowoltaiczną (np. do 8 kWp) i zasilać obiekt przez długi czas.</p>
+<p>Nowoczesne ogniwa klasy A EVE MB31 (584 Ah): W magazynie zastosowano fabrycznie nowe, rygorystycznie testowane przed wysyłką ogniwa litowo-żelazowo-fosforanowe o wysokiej gęstości energii (179 Wh/kg) i niskiej rezystancji wewnętrznej ($R_{we} le 0{,}18text{ m}Omega$).</p>
+<p>Niezwykła żywotność do 20 lat (ponad 8000 cykli): Bezpieczna chemia LiFePO4 wolna od kobaltu zapewnia stabilną pracę i długowieczność przy codziennym ładowaniu oraz rozładowywaniu.</p>
+<p>Brak problemu ze zgłoszeniem do OSD: Ograniczenia prawne dotyczą mocy magazynu, a nie jego pojemności. Dzięki możliwości wyboru wariantu mocy rozładowania zgłoszenie do Operatora Sieci Dystrybucyjnej przebiega bezprzeszkodowo.</p>
+<p>Elastyczna rozbudowa i łączenie równoległe: Możliwość łączenia magazynów równolegle bez względu na ich pojemność (np. 30 kWh + 30 kWh lub 16 kWh + 30 kWh). System pozwala zacząć od jednej jednostki i rozbudowywać go w miarę potrzeb.</p>
+<p>Wbudowany inteligentny BMS: Zaawansowany system zarządczy stale monitoruje status pracy ogniw, dba o ich balansowanie oraz zabezpiecza przed nadnapięciem, zbyt niskim napięciem, nadmiernym prądem, zwarciem i przekroczeniem dopuszczalnych temperatur.</p>
+<p>Polska marka, lokalny serwis i 10 lat gwarancji: Sluxer Energy zapewnia pełne wsparcie techniczne w kraju, błyskawiczny dostęp do części zamiennych oraz 10-letnią gwarancję.</p>
+<p>Zastosowanie<br />
+Elektrownie fotowoltaiczne On-Grid: Domy jednorodzinne oraz małe i średnie obiekty przemysłowe optymalizujące wskaźnik autokonsumpcji.</p>
+<p>Instalacje wyspowe (Off-Grid): Niezależne systemy zasilania w miejscach bez dostępu do sieci elektroenergetycznej.</p>
+<p>Zasilanie gwarantowane (UPS / Backup): Rezerwowe źródło zasilania dla urządzeń wymagających nieprzerwanej pracy.</p>
+<p>Dostępne warianty mocy rozładowania<br />
+W zależności od potrzeb instalacji oraz wymagań OSD, magazyn dostarczany jest w 4 wariantach mocy rozładowania:</p>
+<p>9,7 kW (190 A)</p>
+<p>7,7 kW (150 A)</p>
+<p>4,6 kW (90 A)</p>
+<p>3,1 kW (60 A)</p>
+<p>Uwaga: Moc ładowania zawsze wynosi 9,7 kW (prąd ładowania do 190 A) i nie wpływa na ograniczenia OSD.</p>
+<p>Szeroka kompatybilność z inwerterami<br />
+Magazyn Sluxer Home 30 kWh wyposażony jest w porty komunikacyjne CAN, RS485 oraz moduł Bluetooth. Współpracuje ze wszystkimi wiodącymi na rynku niskonapięciowymi inwerterami hybrydowymi:</p>
+<p>Deye: serie SUN 3.6-5k SG03LP1, SUN 5-12k SG04LP3, SUN 8-20k SG05LP3</p>
+<p>Hoymiles: serie HIT (5.0-20kW), HYS (3.0-6.0kW), HAS (3.0-6.0kW)</p>
+<p>Solis: serie RHI-(3-6)K-48ES-5G, S6-EH3P(8-18)K02-NV-YD-L</p>
+<p>Solplanet: seria ASW (3-6kW)H S2</p>
+<p>Growatt: serie SPF (2000-5000TL, 5/6/8/10KT) oraz WIT 4-15K-HU</p>
+<p>Victron Energy: seria MultiPlus-II</p>
+<p>Sofar Solar: seria HYD 3000-6000 ES</p>
+<p>GoodWe: seria ES 3.6-5k</p>
+<p>Afore: seria AF1-AF6-SL</p>
+<p>SMA: Sunny Island 6.0H / 8.0H-13</p>
+<p>Pozostałe marki: Livoltek, Luxpowertek, Sungrow, Voltronic Power, MUST PV, INVT, Qoltec, SRNE, MPP Solar, Sorotec, Anenji, ECOBSS, Solax (X3 Neo).</p>
+<p>Specyfikacja techniczna<br />
+Parametr           Wartość</p>
+<p>Pojemność nominalna: 30 kWh / 584 Ah (@0.5C, 25±2°C)</p>
+<p>Napięcie nominalne: 51,2 V</p>
+<p>Zakres napięć pracy: 42,0 V – 58,4 V (zalecany: 48,0 V – 54,4 V)</p>
+<p>Konfiguracja ogniw: 2P16S</p>
+<p>Gęstość energii ogniw: 179 Wh/kg</p>
+<p>Maksymalny prąd ładowania: 190 A (moc ładowania 9,7 kW)</p>
+<p>Maksymalny prąd rozładowania: 190 A / 150 A / 90 A / 60 A (w zależności od wariantu)</p>
+<p>Sprawność: 94%</p>
+<p>Zalecany zakres SOC: 10% – 95%</p>
+<p>Żywotność: 8000 cykli</p>
+<p>Interfejs komunikacji: CAN, RS485, Bluetooth</p>
+<p>Wymiary (wys. x szer. x gł.): 830 x 800 x 280 mm</p>
+<p>Waga: 210 kg</p>
+<p>Obudowa: Solidna, metalowa z uchwytami i kółkami ułatwiającymi montaż</p>
+<p>Klasa szczelności: IP20 (do użytku wewnętrznego)</p>
+<p>Temperatura pracy (ładowanie): 0°C ~ 40°C</p>
+<p>Temperatura pracy (rozładowanie): -5°C ~ 40°C</p>
+<p>Temperatura przechowywania: -5°C ~ 35°C (&lt;3 msc) / 25°C (&gt;6 msc)</p>
+<p>Dopuszczalna wilgotność: 5% – 80% RH</p>
+<p>Gwarancja: 10 lat</p>]]></Opis>
+    <Krótki_opis><![CDATA[<p>Magazyn Energii Sluxer Home 30 kWh<br />
+Niskonapięciowy bank energii LiFePO4 z polskim wsparciem technicznym</p>
+<p>Sluxer Home 30 kWh to wysokowydajny, niskonapięciowy magazyn energii o bardzo dużej pojemności, zaprojektowany z myślą o wymagających gospodarstwach domowych, gospodarstwach rolnych oraz obiektach komercyjnych i przemysłowych. Urządzenie pozwala efektywnie gromadzić dzienną produkcję z instalacji fotowoltaicznych, gwarantując niezależność energetyczną, wysoki poziom bezpieczeństwa oraz ciągłość zasilania w sytuacjach awaryjnych.</p>
+<p>WAŻNE: Zestaw nie zawiera kabla komunikacyjnego (RJ458) oraz kabla zasilania między falownikiem, a baterią (miedziany LGY 50mm2). Możliwość dokupienia zestawu kabli osobno</p>
+<p>Kluczowe zalety i wyróżniki<br />
+Duża pojemność (30 kWh / 584 Ah): Wystarczająca, aby zmagazynować energię wytworzoną przez instalację fotowoltaiczną (np. do 8 kWp) i zasilać obiekt przez długi czas.</p>
+<p>Nowoczesne ogniwa klasy A EVE MB31 (584 Ah): W magazynie zastosowano fabrycznie nowe, rygorystycznie testowane przed wysyłką ogniwa litowo-żelazowo-fosforanowe o wysokiej gęstości energii (179 Wh/kg) i niskiej rezystancji wewnętrznej ($R_{we} le 0{,}18text{ m}Omega$).</p>
+<p>Niezwykła żywotność do 20 lat (ponad 8000 cykli): Bezpieczna chemia LiFePO4 wolna od kobaltu zapewnia stabilną pracę i długowieczność przy codziennym ładowaniu oraz rozładowywaniu.</p>
+<p>Brak problemu ze zgłoszeniem do OSD: Ograniczenia prawne dotyczą mocy magazynu, a nie jego pojemności. Dzięki możliwości wyboru wariantu mocy rozładowania zgłoszenie do Operatora Sieci Dystrybucyjnej przebiega bezprzeszkodowo.</p>
+<p>Elastyczna rozbudowa i łączenie równoległe: Możliwość łączenia magazynów równolegle bez względu na ich pojemność (np. 30 kWh + 30 kWh lub 16 kWh + 30 kWh). System pozwala zacząć od jednej jednostki i rozbudowywać go w miarę potrzeb.</p>
+<p>Wbudowany inteligentny BMS: Zaawansowany system zarządczy stale monitoruje status pracy ogniw, dba o ich balansowanie oraz zabezpiecza przed nadnapięciem, zbyt niskim napięciem, nadmiernym prądem, zwarciem i przekroczeniem dopuszczalnych temperatur.</p>
+<p>Polska marka, lokalny serwis i 10 lat gwarancji: Sluxer Energy zapewnia pełne wsparcie techniczne w kraju, błyskawiczny dostęp do części zamiennych oraz 10-letnią gwarancję.</p>
+<p>Zastosowanie<br />
+Elektrownie fotowoltaiczne On-Grid: Domy jednorodzinne oraz małe i średnie obiekty przemysłowe optymalizujące wskaźnik autokonsumpcji.</p>
+<p>Instalacje wyspowe (Off-Grid): Niezależne systemy zasilania w miejscach bez dostępu do sieci elektroenergetycznej.</p>
+<p>Zasilanie gwarantowane (UPS / Backup): Rezerwowe źródło zasilania dla urządzeń wymagających nieprzerwanej pracy.</p>
+<p>Dostępne warianty mocy rozładowania<br />
+W zależności od potrzeb instalacji oraz wymagań OSD, magazyn dostarczany jest w 4 wariantach mocy rozładowania:</p>
+<p>9,7 kW (190 A)</p>
+<p>7,7 kW (150 A)</p>
+<p>4,6 kW (90 A)</p>
+<p>3,1 kW (60 A)</p>
+<p>Uwaga: Moc ładowania zawsze wynosi 9,7 kW (prąd ładowania do 190 A) i nie wpływa na ograniczenia OSD.</p>
+<p>Szeroka kompatybilność z inwerterami<br />
+Magazyn Sluxer Home 30 kWh wyposażony jest w porty komunikacyjne CAN, RS485 oraz moduł Bluetooth. Współpracuje ze wszystkimi wiodącymi na rynku niskonapięciowymi inwerterami hybrydowymi:</p>
+<p>Deye: serie SUN 3.6-5k SG03LP1, SUN 5-12k SG04LP3, SUN 8-20k SG05LP3</p>
+<p>Hoymiles: serie HIT (5.0-20kW), HYS (3.0-6.0kW), HAS (3.0-6.0kW)</p>
+<p>Solis: serie RHI-(3-6)K-48ES-5G, S6-EH3P(8-18)K02-NV-YD-L</p>
+<p>Solplanet: seria ASW (3-6kW)H S2</p>
+<p>Growatt: serie SPF (2000-5000TL, 5/6/8/10KT) oraz WIT 4-15K-HU</p>
+<p>Victron Energy: seria MultiPlus-II</p>
+<p>Sofar Solar: seria HYD 3000-6000 ES</p>
+<p>GoodWe: seria ES 3.6-5k</p>
+<p>Afore: seria AF1-AF6-SL</p>
+<p>SMA: Sunny Island 6.0H / 8.0H-13</p>
+<p>Pozostałe marki: Livoltek, Luxpowertek, Sungrow, Voltronic Power, MUST PV, INVT, Qoltec, SRNE, MPP Solar, Sorotec, Anenji, ECOBSS, Solax (X3 Neo).</p>
+<p>Specyfikacja techniczna<br />
+Parametr           Wartość</p>
+<p>Pojemność nominalna: 30 kWh / 584 Ah (@0.5C, 25±2°C)</p>
+<p>Napięcie nominalne: 51,2 V</p>
+<p>Zakres napięć pracy: 42,0 V – 58,4 V (zalecany: 48,0 V – 54,4 V)</p>
+<p>Konfiguracja ogniw: 2P16S</p>
+<p>Gęstość energii ogniw: 179 Wh/kg</p>
+<p>Maksymalny prąd ładowania: 190 A (moc ładowania 9,7 kW)</p>
+<p>Maksymalny prąd rozładowania: 190 A / 150 A / 90 A / 60 A (w zależności od wariantu)</p>
+<p>Sprawność: 94%</p>
+<p>Zalecany zakres SOC: 10% – 95%</p>
+<p>Żywotność: 8000 cykli</p>
+<p>Interfejs komunikacji: CAN, RS485, Bluetooth</p>
+<p>Wymiary (wys. x szer. x gł.): 830 x 800 x 280 mm</p>
+<p>Waga: 210 kg</p>
+<p>Obudowa: Solidna, metalowa z uchwytami i kółkami ułatwiającymi montaż</p>
+<p>Klasa szczelności: IP20 (do użytku wewnętrznego)</p>
+<p>Temperatura pracy (ładowanie): 0°C ~ 40°C</p>
+<p>Temperatura pracy (rozładowanie): -5°C ~ 40°C</p>
+<p>Temperatura przechowywania: -5°C ~ 35°C (&lt;3 msc) / 25°C (&gt;6 msc)</p>
+<p>Dopuszczalna wilgotność: 5% – 80% RH</p>
+<p>Gwarancja: 10 lat</p>]]></Krótki_opis>
+    <EAN_produktu><![CDATA[5904031849957]]></EAN_produktu>
+    <Url><![CDATA[https://www.sluxer.com/sklep/sluxer-home-32-kwh/]]></Url>
+  </product>
+</products>
