@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sluxer – Polityka prywatności urządzeń / Device Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #222;
+    }
+    h1 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 10px 0 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 6px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f5f5f5;
+    }
+    .lang-switch {
+      margin-bottom: 30px;
+    }
+    .lang-switch a {
+      margin-right: 15px;
+    }
+    /* SZKIC: wszystko oznaczone tą klasą trzeba uzupełnić lub potwierdzić przed publikacją */
+    .todo {
+      background: #fff3b0;
+      padding: 0 3px;
+    }
+    hr {
+      border: none;
+      border-top: 2px solid #eee;
+      margin: 50px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <a href="#pl">Polski</a>
+    <a href="#en">English</a>
+  </div>
+
+  <!-- ============================== POLSKI ============================== -->
+  <section id="pl" lang="pl">
+    <h1>Polityka prywatności urządzeń i usług Sluxer</h1>
+    <p><strong>Obowiązuje od:</strong> 21 października 2026 r.</p>
+
+    <p>
+      Ta polityka opisuje, jakie dane przetwarzają urządzenia SLUXER EMS (typ meter) wraz
+      z modułami bateryjnymi oraz powiązane usługi
+      chmurowe Sluxer, w jakim celu i jakie prawa Ci przysługują. Zasady dotyczące samej
+      aplikacji mobilnej (dostęp do aparatu przy skanowaniu kodów QR) opisuje
+      <a href="../">polityka prywatności aplikacji</a>.
+    </p>
+
+    <h2>1. Administrator danych</h2>
+    <p>
+      Administratorem danych osobowych jest
+      Sluxer Polska sp. z o.o. z siedzibą w Warszawie, ul. Piaseczyńska 54, 00-765 Warszawa, wpisana do Krajowego Rejestru Sądowego pod numerem KRS 0001177532, NIP 5214120394, REGON 541967074.<br>
+      Kontakt w sprawach ochrony danych:
+      <a href="mailto:cyber@sluxer.com">cyber@sluxer.com</a> lub listownie na adres siedziby.
+    </p>
+
+    <h2>2. Jakie dane przetwarzamy</h2>
+
+    <h3>2.1. Dane pomiarowe Twojej instalacji</h3>
+    <p>
+      Urządzenie mierzy przepływy energii w punkcie przyłączenia instalacji do sieci oraz
+      odczytuje stan falownika i magazynu energii:
+    </p>
+    <ul>
+      <li>moc czynną na każdej fazie i łącznie, napięcia fazowe,</li>
+      <li>energię pobraną z sieci i oddaną do sieci,</li>
+      <li>produkcję instalacji fotowoltaicznej,</li>
+      <li>moc, poziom naładowania (SoC) i temperaturę magazynu energii.</li>
+    </ul>
+    <p>
+      Urządzenie nie ma kamery ani mikrofonu i nie mierzy niczego poza parametrami
+      elektrycznymi. <strong>Profil zużycia energii może jednak pośrednio ujawniać rytm
+      życia domowników</strong>, np. pory obecności w domu czy wyjazdy. Dlatego traktujemy
+      te dane jako dane osobowe i chronimy je odpowiednio.
+    </p>
+
+    <h3>2.2. Dane konfiguracyjne</h3>
+    <ul>
+      <li>przybliżona lokalizacja instalacji (współrzędne geograficzne), potrzebna do prognozy pogody i produkcji,</li>
+      <li>wybrana taryfa i sprzedawca energii, harmonogram pracy, ustawienia magazynu energii,</li>
+      <li>nazwa i hasło sieci WiFi, z którą łączy się urządzenie.</li>
+    </ul>
+
+    <h3>2.3. Plan pracy i prognozy</h3>
+    <p>
+      Urządzenie samo wylicza prognozę zużycia i produkcji oraz plan ładowania
+      i rozładowania magazynu energii. Plan i prognoza są przesyłane do chmury Sluxer, abyś
+      mógł je zobaczyć w aplikacji.
+    </p>
+
+    <h3>2.4. Dane techniczne urządzenia</h3>
+    <ul>
+      <li>identyfikator i numer seryjny urządzenia, wersja oprogramowania,</li>
+      <li>siła sygnału WiFi, czas pracy, stan połączenia,</li>
+      <li>adres IP, z którego urządzenie łączy się z naszymi serwerami,</li>
+      <li>dziennik zdarzeń bezpieczeństwa (np. uruchomienie, aktualizacja, zmiana konfiguracji),
+          przechowywany na urządzeniu i zawierający tylko czas i rodzaj zdarzenia.</li>
+    </ul>
+
+    <h3>2.5. Konto użytkownika</h3>
+    <p>
+      Jeśli korzystasz z aplikacji Sluxer: adres e-mail, hasło (przechowywane wyłącznie
+      w postaci skrótu kryptograficznego), lista przypisanych urządzeń i nadane im nazwy.
+    </p>
+
+    <h2>3. Gdzie dane są przechowywane</h2>
+    <table>
+      <tr><th>Dane</th><th>Na urządzeniu</th><th>W chmurze Sluxer</th></tr>
+      <tr><td>Dane pomiarowe</td><td>tak – historia służy do prognoz</td><td>tak – średnie z 5 minut</td></tr>
+      <tr><td>Lokalizacja, taryfa, ustawienia</td><td>tak</td><td>część ustawień technicznych</td></tr>
+      <tr><td>Nazwa i hasło WiFi</td><td>tak</td><td>nie</td></tr>
+      <tr><td>Plan pracy i prognoza</td><td>tak</td><td>tak</td></tr>
+      <tr><td>Konto użytkownika</td><td>nie</td><td>tak</td></tr>
+    </table>
+    <p>Pamięć urządzenia, w której przechowywane są dane, jest szyfrowana.</p>
+
+    <h2>4. W jakim celu i na jakiej podstawie</h2>
+    <table>
+      <tr><th>Cel</th><th>Podstawa prawna (RODO)</th></tr>
+      <tr><td>Sterowanie magazynem energii i instalacją, prognozy, plan pracy</td><td>wykonanie umowy – art. 6 ust. 1 lit. b</td></tr>
+      <tr><td>Udostępnianie danych i plan pracy w aplikacji, zdalna obsługa i serwis</td><td>wykonanie umowy – art. 6 ust. 1 lit. b</td></tr>
+      <tr><td>Aktualizacje oprogramowania, w tym poprawki bezpieczeństwa</td><td>wykonanie umowy oraz prawnie uzasadniony interes – art. 6 ust. 1 lit. b i f</td></tr>
+      <tr><td>Bezpieczeństwo urządzeń i usług, diagnostyka usterek</td><td>prawnie uzasadniony interes – art. 6 ust. 1 lit. f</td></tr>
+      <tr><td>Obsługa gwarancji i reklamacji</td><td>obowiązek prawny – art. 6 ust. 1 lit. c</td></tr>
+    </table>
+    <p>Nie sprzedajemy Twoich danych i nie używamy ich do reklamy.</p>
+
+    <h2>5. Z jakimi usługami łączy się urządzenie</h2>
+    <table>
+      <tr><th>Usługa</th><th>Po co</th><th>Jakie dane wysyła urządzenie</th></tr>
+      <tr><td>Chmura Sluxer</td><td>prezentacja danych w aplikacji, polecenia z aplikacji</td><td>dane pomiarowe, plan pracy, dane techniczne (połączenie szyfrowane)</td></tr>
+      <tr><td>Zdalny serwis Sluxer</td><td>zdalna obsługa, diagnostyka i konfiguracja</td><td>szyfrowany tunel; serwis Sluxer ma przez niego dostęp do konfiguracji urządzenia</td></tr>
+      <tr><td>Serwer aktualizacji Sluxer</td><td>sprawdzanie i pobieranie aktualizacji</td><td>tylko zapytanie o wersję</td></tr>
+      <tr><td>Serwis pogodowy Sluxer</td><td>prognoza produkcji fotowoltaiki</td><td>lokalizacja zaokrąglona do ok. 1 km</td></tr>
+      <tr><td>PSE S.A. (api.raporty.pse.pl)</td><td>rynkowe ceny energii</td><td>żadnych danych osobowych</td></tr>
+      <tr><td>Serwer cen taryf Sluxer</td><td>ceny energii dla wybranej taryfy</td><td>wybrana taryfa i sprzedawca</td></tr>
+      <tr><td>Serwery czasu (pool.ntp.org)</td><td>synchronizacja zegara</td><td>żadnych danych osobowych</td></tr>
+    </table>
+    <p>
+      Wszystkie te połączenia są szyfrowane (TLS lub szyfrowany tunel), a urządzenie sprawdza
+      certyfikat serwera, z którym się łączy. Wyjątkiem jest synchronizacja czasu, która nie
+      przenosi żadnych danych osobowych. Każde połączenie z internetem ujawnia odbiorcy adres IP
+      Twojej sieci.
+      Jeśli samodzielnie skonfigurujesz w urządzeniu własny serwer MQTT lub integrację
+      z Home Assistant, dane będą przesyłane także tam. Za takie miejsca odpowiadasz Ty.
+    </p>
+
+    <h2>6. Odbiorcy danych</h2>
+    <p>
+      Dane mogą być przekazywane podmiotom, które przetwarzają je na nasze zlecenie, głównie
+      dostawcom usług hostingowych i serwerowych:
+      Hetzner Online GmbH (Niemcy; serwery w Finlandii) – chmura Sluxer, serwis pogodowy; mikr.us (Polska) – serwer cen taryf; Cloudflare, Inc. – pośrednik sieciowy serwera cen taryf. Zdalny serwis i serwer aktualizacji działają na własnym serwerze Sluxer w Polsce.
+      Dane mogą też otrzymać instalator lub serwisant obsługujący Twoją instalację, w zakresie
+      potrzebnym do wykonania usługi.
+    </p>
+    <p>
+      Dane pomiarowe, plan pracy i dane konta przechowujemy wyłącznie w Europejskim Obszarze Gospodarczym. Jedynym odbiorcą spoza EOG jest Cloudflare, Inc. (USA), przez którego sieć przechodzą zapytania o ceny taryf (wybrana taryfa i adres IP). Podstawą przekazania jest decyzja Komisji Europejskiej w sprawie EU-US Data Privacy Framework oraz standardowe klauzule umowne.
+    </p>
+
+    <h2>7. Jak długo przechowujemy dane</h2>
+    <ul>
+      <li>szczegółowe dane pomiarowe w chmurze (średnie 5-minutowe): <strong>90 dni</strong>,</li>
+      <li>dane pomiarowe zagregowane do 15 minut: <strong>5 lat</strong>,</li>
+      <li>dane konta: do czasu usunięcia konta,</li>
+      <li>dane na urządzeniu: do przywrócenia ustawień fabrycznych.</li>
+    </ul>
+    <p>
+      Usunięcie konta usuwa je natychmiast wraz z dostępem do urządzeń. Dane pomiarowe są
+      przypisane do urządzenia, a nie do konta, bo urządzenie zwykle zostaje w lokalu i może
+      obsługiwać kolejnych użytkowników. Zostają więc do końca okresu przechowywania, chyba że
+      poprosisz o ich wcześniejsze usunięcie (adres w punkcie 1). Informację o usunięciu konta
+      (adres e-mail i czas) zachowujemy jako dowód realizacji żądania.
+    </p>
+
+    <h2>8. Jak usunąć swoje dane</h2>
+    <p><strong>Z urządzenia</strong> – przywróć ustawienia fabryczne, przyciskiem na urządzeniu lub
+      z aplikacji przez Bluetooth (opis w instrukcji). Usuwa to konfigurację, w tym nazwę i hasło
+      WiFi, lokalizację, historię pomiarów i ceny. Na urządzeniu zostaje tylko dziennik zdarzeń
+      bezpieczeństwa, który nie zawiera danych osobowych (wyłącznie czas i rodzaj zdarzenia).</p>
+    <p><strong>Z chmury</strong> – usuń konto w aplikacji (opcja usunięcia konta, wymaga podania
+      hasła) albo skorzystaj ze strony <a href="../delete-account/">usuwanie konta</a>. O usunięcie
+      danych pomiarowych urządzenia poproś na adres z punktu 1 (zob. punkt 7).</p>
+    <p>
+      Przed sprzedażą lub przekazaniem urządzenia innej osobie zawsze przywróć ustawienia fabryczne.
+    </p>
+
+    <h2>9. Twoje prawa</h2>
+    <p>Masz prawo do:</p>
+    <ul>
+      <li>dostępu do swoich danych i otrzymania ich kopii,</li>
+      <li>sprostowania danych,</li>
+      <li>usunięcia danych,</li>
+      <li>ograniczenia przetwarzania,</li>
+      <li>przenoszenia danych,</li>
+      <li>sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie,</li>
+      <li>wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa, uodo.gov.pl).</li>
+    </ul>
+    <p>
+      Aby skorzystać z tych praw, napisz na adres podany w punkcie 1. Podanie danych jest
+      dobrowolne, ale bez danych pomiarowych urządzenie nie może sterować instalacją,
+      a bez połączenia z chmurą nie zobaczysz danych w aplikacji.
+    </p>
+
+    <h2>10. Bezpieczeństwo</h2>
+    <p>
+      Wszystkie połączenia urządzenia z internetem, w których przesyłane są dane, są
+      szyfrowane, a komunikacja radiowa z modułami bateryjnymi i z aplikacją przez Bluetooth
+      również jest szyfrowana. Oprogramowanie urządzenia jest podpisane cyfrowo, a urządzenie
+      przyjmuje tylko nasze oryginalne aktualizacje. Aktualizacje
+      bezpieczeństwa zapewniamy przez co najmniej 5 lat od daty produkcji urządzenia.
+      Jak zgłosić problem z bezpieczeństwem, opisujemy na stronie
+      <a href="../../security/">Bezpieczeństwo</a>.
+    </p>
+
+    <h2>11. Zmiany polityki</h2>
+    <p>
+      Możemy aktualizować tę politykę, np. gdy zmienią się funkcje urządzenia. Aktualna wersja
+      jest zawsze dostępna na tej stronie, z datą obowiązywania.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- ============================== ENGLISH ============================= -->
+  <section id="en" lang="en">
+    <h1>Sluxer Devices and Services Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> 21 October 2026</p>
+
+    <p>
+      This policy describes what data SLUXER EMS devices (meter type) together with battery
+      modules and the related Sluxer cloud
+      services process, for what purpose, and what rights you have. The mobile application
+      itself (camera access for scanning QR codes) is covered by the
+      <a href="../">application privacy policy</a>.
+    </p>
+
+    <h2>1. Data controller</h2>
+    <p>
+      The controller of your personal data is
+      Sluxer Polska sp. z o.o., ul. Piaseczyńska 54, 00-765 Warsaw, Poland, entered in the Polish National Court Register (KRS) under no. 0001177532, tax ID (NIP) 5214120394, REGON 541967074.<br>
+      Data protection contact:
+      <a href="mailto:cyber@sluxer.com">cyber@sluxer.com</a> or by post to our registered address.
+    </p>
+
+    <h2>2. What data we process</h2>
+
+    <h3>2.1. Measurements of your installation</h3>
+    <p>
+      The device measures energy flows at the point where your installation connects to the
+      grid and reads the status of the inverter and the energy storage:
+    </p>
+    <ul>
+      <li>active power per phase and in total, phase voltages,</li>
+      <li>energy imported from and exported to the grid,</li>
+      <li>photovoltaic production,</li>
+      <li>power, state of charge (SoC) and temperature of the energy storage.</li>
+    </ul>
+    <p>
+      The device has no camera or microphone and measures nothing other than electrical
+      quantities. <strong>An energy consumption profile can, however, indirectly reveal the
+      household's routine</strong>, such as when people are at home or away. We therefore
+      treat this data as personal data and protect it accordingly.
+    </p>
+
+    <h3>2.2. Configuration data</h3>
+    <ul>
+      <li>the approximate location of the installation (geographic coordinates), used for weather and production forecasts,</li>
+      <li>the selected tariff and energy supplier, operating schedule, energy storage settings,</li>
+      <li>the name and password of the WiFi network the device connects to.</li>
+    </ul>
+
+    <h3>2.3. Operating plan and forecasts</h3>
+    <p>
+      The device itself computes a consumption and production forecast and a charging and
+      discharging plan for the energy storage. The plan and forecast are sent to the Sluxer
+      cloud so that you can see them in the application.
+    </p>
+
+    <h3>2.4. Technical device data</h3>
+    <ul>
+      <li>device identifier and serial number, software version,</li>
+      <li>WiFi signal strength, uptime, connection status,</li>
+      <li>the IP address from which the device connects to our servers,</li>
+      <li>a security event log (e.g. start-up, update, configuration change), kept on the device
+          and containing only the time and type of each event.</li>
+    </ul>
+
+    <h3>2.5. User account</h3>
+    <p>
+      If you use the Sluxer application: your e-mail address, password (stored only as a
+      cryptographic hash), the list of devices assigned to you and the names you gave them.
+    </p>
+
+    <h2>3. Where the data is stored</h2>
+    <table>
+      <tr><th>Data</th><th>On the device</th><th>In the Sluxer cloud</th></tr>
+      <tr><td>Measurements</td><td>yes – history is used for forecasts</td><td>yes – 5-minute averages</td></tr>
+      <tr><td>Location, tariff, settings</td><td>yes</td><td>some technical settings</td></tr>
+      <tr><td>WiFi name and password</td><td>yes</td><td>no</td></tr>
+      <tr><td>Operating plan and forecast</td><td>yes</td><td>yes</td></tr>
+      <tr><td>User account</td><td>no</td><td>yes</td></tr>
+    </table>
+    <p>The device storage that holds the data is encrypted.</p>
+
+    <h2>4. Purposes and legal bases</h2>
+    <table>
+      <tr><th>Purpose</th><th>Legal basis (GDPR)</th></tr>
+      <tr><td>Controlling the energy storage and installation, forecasts, operating plan</td><td>performance of a contract – Art. 6(1)(b)</td></tr>
+      <tr><td>Showing data and the plan in the application, remote support and service</td><td>performance of a contract – Art. 6(1)(b)</td></tr>
+      <tr><td>Software updates, including security fixes</td><td>performance of a contract and legitimate interest – Art. 6(1)(b) and (f)</td></tr>
+      <tr><td>Security of devices and services, fault diagnostics</td><td>legitimate interest – Art. 6(1)(f)</td></tr>
+      <tr><td>Handling warranty and complaints</td><td>legal obligation – Art. 6(1)(c)</td></tr>
+    </table>
+    <p>We do not sell your data and do not use it for advertising.</p>
+
+    <h2>5. Services the device connects to</h2>
+    <table>
+      <tr><th>Service</th><th>Purpose</th><th>Data sent by the device</th></tr>
+      <tr><td>Sluxer cloud</td><td>showing data in the application, commands from the application</td><td>measurements, operating plan, technical data (encrypted connection)</td></tr>
+      <tr><td>Sluxer remote service</td><td>remote support, diagnostics and configuration</td><td>encrypted tunnel; through it Sluxer service staff can access the device configuration</td></tr>
+      <tr><td>Sluxer update server</td><td>checking for and downloading updates</td><td>a version query only</td></tr>
+      <tr><td>Sluxer weather service</td><td>photovoltaic production forecast</td><td>location rounded to about 1 km</td></tr>
+      <tr><td>PSE S.A. (api.raporty.pse.pl)</td><td>market energy prices</td><td>no personal data</td></tr>
+      <tr><td>Sluxer tariff price server</td><td>energy prices for the selected tariff</td><td>the selected tariff and supplier</td></tr>
+      <tr><td>Time servers (pool.ntp.org)</td><td>clock synchronisation</td><td>no personal data</td></tr>
+    </table>
+    <p>
+      All of these connections are encrypted (TLS or an encrypted tunnel), and the device
+      verifies the certificate of the server it connects to. The only exception is time
+      synchronisation, which carries no personal data. Every internet connection reveals your
+      network's IP address to the recipient.
+      If you configure your own MQTT server or a Home Assistant integration on the device,
+      data will also be sent there; you are responsible for those destinations.
+    </p>
+
+    <h2>6. Recipients</h2>
+    <p>
+      Data may be disclosed to entities processing it on our behalf, mainly hosting and server
+      providers:
+      Hetzner Online GmbH (Germany; servers in Finland) – Sluxer cloud, weather service; mikr.us (Poland) – tariff price server; Cloudflare, Inc. – network intermediary for the tariff price server. Remote service and the update server run on Sluxer's own server in Poland.
+      The installer or service technician looking after your installation may also receive data,
+      to the extent needed to provide the service.
+    </p>
+    <p>
+      Measurements, the operating plan and account data are stored only in the European Economic Area. The only recipient outside the EEA is Cloudflare, Inc. (USA), whose network carries tariff price queries (the selected tariff and the IP address). The transfer relies on the European Commission's EU-US Data Privacy Framework decision and on standard contractual clauses.
+    </p>
+
+    <h2>7. How long we keep data</h2>
+    <ul>
+      <li>detailed measurements in the cloud (5-minute averages): <strong>90 days</strong>,</li>
+      <li>measurements aggregated to 15 minutes: <strong>5 years</strong>,</li>
+      <li>account data: until the account is deleted,</li>
+      <li>data on the device: until a factory reset.</li>
+    </ul>
+    <p>
+      Deleting your account removes it immediately, together with your access to the devices.
+      Measurements belong to the device, not the account, because the device usually stays at
+      the premises and may serve later users. They therefore remain until the end of the
+      retention period, unless you ask us to delete them earlier (address in section 1). We keep
+      a record that the account was deleted (e-mail address and time) as proof that the request
+      was carried out.
+    </p>
+
+    <h2>8. How to delete your data</h2>
+    <p><strong>From the device</strong> – perform a factory reset, using the button on the device or
+      from the application over Bluetooth (see the manual). This deletes the configuration,
+      including the WiFi name and password, the location, the measurement history and prices.
+      Only the security event log remains on the device; it contains no personal data (only the
+      time and type of each event).</p>
+    <p><strong>From the cloud</strong> – delete your account in the application (the delete-account
+      option, which asks for your password), or use the <a href="../delete-account/">account
+      deletion</a> page. To have the device's measurements deleted, write to the address in
+      section 1 (see section 7).</p>
+    <p>
+      Always perform a factory reset before selling the device or passing it on to someone else.
+    </p>
+
+    <h2>9. Your rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>access your data and receive a copy of it,</li>
+      <li>rectify your data,</li>
+      <li>have your data erased,</li>
+      <li>restrict processing,</li>
+      <li>data portability,</li>
+      <li>object to processing based on legitimate interest,</li>
+      <li>lodge a complaint with the President of the Personal Data Protection Office (UODO, ul. Stawki 2, 00-193 Warsaw, Poland, uodo.gov.pl) or the supervisory authority in your country.</li>
+    </ul>
+    <p>
+      To exercise these rights, write to the address in section 1. Providing data is voluntary,
+      but without measurements the device cannot control your installation, and without a cloud
+      connection you will not see your data in the application.
+    </p>
+
+    <h2>10. Security</h2>
+    <p>
+      All of the device's internet connections that carry data are encrypted, and so is the
+      radio communication with the battery modules and with the application over Bluetooth.
+      The device software is digitally signed, and the device accepts only our genuine
+      updates. We provide security updates for at least
+      5 years from the date of manufacture of the device. How to report a security issue is
+      described on the <a href="../../security/">Security</a> page.
+    </p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>
+      We may update this policy, for example when device features change. The current version,
+      with its effective date, is always available on this page.
+    </p>
+  </section>
+</body>
+</html>

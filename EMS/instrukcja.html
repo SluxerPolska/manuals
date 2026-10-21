@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLUXER EMS – instrukcja</title>
+    <style>
+        /* Reset and basic styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h1 {
+            color: #222;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 15px;
+        }
+        .tab-btn {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            background: #f9f9f9;
+            color: #666;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        /* Active Tab Styling */
+        .tab-btn.active {
+            background: #0056b3;
+            color: white;
+            border-color: #0056b3;
+        }
+
+        /* Section Visibility Control */
+        .manual-section {
+            display: none;
+        }
+        .manual-section.active {
+            display: block;
+        }
+
+        /* Step Card styling */
+        .step-card {
+            margin-bottom: 35px;
+        }
+        .step-number {
+            display: inline-block;
+            background: #333;
+            color: #fff;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        .deye-theme .step-number { background: #0056b3; }
+        .hoymiles-theme .step-number { background: #107c41; }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        p {
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        /* Responsive Image Styling */
+        .step-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+
+        .info-section { margin-top: 30px; }
+        .info-section h2 { margin-top: 25px; }
+        .info-section ul, .info-section ol { margin: 0 0 15px 22px; font-size: 15px; color: #444; }
+        .info-section li { margin-bottom: 6px; }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+            border-top: 1px solid #eaeaea;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>SLUXER EMS – instrukcja</h1>
+            <p style="color: #666; font-size: 14px;">Wybierz swój inwerter.</p>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <button class="tab-btn active" onclick="switchSection('deye', this)">DEYE</button>
+            <button class="tab-btn" onclick="switchSection('hoymiles', this)">Hoymiles</button>
+
+        </div>
+
+        <!-- ================= DEYE SECTION ================= -->
+        <div id="deye" class="manual-section active deye-theme">
+            <div class="step-card">
+                <span class="step-number">Krok 1</span>
+                <h2>Podłączenie licznika</h2>
+                <p>Podłącz licznik tak, żeby był w stanie zmierzyć wszystkie odbiorniki i urządzenia wytwórze prądu znajdujące się w tej instalacji.</p>
+                <img src="../Integrator/img/meter-connection.png" alt="meter connection diagram" class="step-image">
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">Krok 2</span>
+                <h2>Połączenie licznika i modułu EMS</h2>
+                <p>W zestawie znajdują się dwa przygotowane kable o kolorach biały-biały oraz czarwony-czarny. Podłącz odpowiednie wtyczki do licznika energii(pasują tylko w jednej pozycji). Następnie drugie końce kabli podłącz do modułu EMS. Zwróć uwagę, że kable pasują tutaj naprzemiennie. Pierwszym kablem z przodu musi być biały. </p>
+                <img src="../Integrator/img/meter-integrator.png" alt="meter integrator connection" class="step-image">
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">Krok 3</span>
+                <h2>Połączenie baterii i falownika</h2>
+                <p>Zwróć uwagę na podłączenie pomiędzy modułem baterii, baterią oraz samym falownikiem. Wykorzystaj złącza w module EMS baterii opisane jako BMS oraz METER2. </p>
+                <img src="../Integrator/img/deye-integrator.png" alt="meter integrator connection" class="step-image">
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">Krok 4</span>
+                <h2>Parowanie urządzeń</h2>
+                <p>Upewnij się, że wszystkie połączenia elektryczne są poprawnie wykonane oraz, że wszystkie skrętki oraz złącza RJ45 poprawnie przewodzą prąd. Włącz baterię oraz zasilanie w rozdzielni elektryczej. Przytrzymaj zaznaczone przyciski minimum 4 sekundy aż do pojawienia się migających na zielono diód. Zwiększenie częstotliwości migania diód oznacza poprawnie zakończony proces parownia. </p>
+                <img src="../Integrator/img/integrator-pair.png" alt="meter integrator connection" class="step-image">
+            </div>
+            <div class="step-card">
+                <span class="step-number">Krok 5</span>
+                <h2>Połączenie z aplikacją</h2>
+                <p>Zainstaluj aplikację Sluxer, zaloguj się i zeskanuj kod QR z etykiety EMS. Telefon połączy się z EMS przez Bluetooth; połączenie jest szyfrowane, a dostęp daje tylko kod z etykiety tego egzemplarza. Nowe urządzenie jest widoczne od razu. Urządzenie już skonfigurowane ma Bluetooth wyłączony – krótkie naciśnięcie przycisku na EMS włącza go na 5 minut.</p>
+                <img src="../Integrator/img/integrator-bluetooth.png" alt="połączenie z aplikacją przez Bluetooth" class="step-image">
+            </div>
+            <div class="step-card">
+                <span class="step-number">Krok 6</span>
+                <h2>Konfiguracja EMS</h2>
+                <p>W aplikacji: ustaw <strong>hasło instalatora</strong> (co najmniej 8 znaków, inne niż hasła używane gdzie indziej – aplikacja nie pozwoli przejść dalej bez niego), wybierz sieć WiFi i podaj jej hasło, wybierz licznik (np. Sluxer) i uzupełnij parametry sparowanej baterii: moc, pojemność, minSoC i maxSoC.</p>
+            </div>
+            <div class="step-card">
+                <span class="step-number">Krok 7</span>
+                <h2>Konfiguracja falownika</h2>
+                <p>Ustaw falownik jak na poniższych zdjęciach. </p>
+                <img src="../Integrator/img/deye-config.png" alt="meter integrator connection" class="step-image">
+            </div>
+        </div>
+
+        <!-- ================= HOYMILES SECTION ================= -->
+        <div id="hoymiles" class="manual-section hoymiles-theme">
+            <div class="step-card">
+                <span class="step-number">Krok 1</span>
+                <h2>Podłączenie licznika</h2>
+                <p>Podłącz licznik tak, żeby był w stanie zmierzyć wszystkie odbiorniki i urządzenia wytwórze prądu znajdujące się w tej instalacji.</p>
+                <img src="../Integrator/img/meter-connection.png" alt="meter connection diagram" class="step-image">
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">Krok 2</span>
+                <h2>Połączenie licznika i modułu EMS</h2>
+                <p>W zestawie znajdują się dwa przygotowane kable o kolorach biały-biały oraz czarwony-czarny. Podłącz odpowiednie wtyczki do licznika energii(pasują tylko w jednej pozycji). Następnie drugie końce kabli podłącz do modułu EMS. Zwróć uwagę, że kable pasują tutaj naprzemiennie. Pierwszym kablem z przodu musi być biały. </p>
+                <img src="../Integrator/img/meter-integrator.png" alt="meter integrator connection" class="step-image">
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">Krok 3</span>
+                <h2>Połączenie baterii i falownika</h2>
+                <p>Zwróć uwagę na podłączenie pomiędzy modułem baterii, baterią oraz samym falownikiem. Wykorzystaj złącza w module EMS baterii opisane jako BMS oraz METER1. </p>
+                <img src="../Integrator/img/hoymiles-integrator.png" alt="meter integrator connection" class="step-image">
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">Krok 4</span>
+                <h2>Parowanie urządzeń</h2>
+                <p>Upewnij się, że wszystkie połączenia elektryczne są poprawnie wykonane oraz, że wszystkie skrętki oraz złącza RJ45 poprawnie przewodzą prąd. Włącz baterię oraz zasilanie w rozdzielni elektryczej. Przytrzymaj zaznaczone przyciski minimum 4 sekundy aż do pojawienia się migających na zielono diód. Zwiększenie częstotliwości migania diód oznacza poprawnie zakończony proces parownia. </p>
+                <img src="../Integrator/img/integrator-pair.png" alt="meter integrator connection" class="step-image">
+            </div>
+            <div class="step-card">
+                <span class="step-number">Krok 5</span>
+                <h2>Połączenie z aplikacją</h2>
+                <p>Zainstaluj aplikację Sluxer, zaloguj się i zeskanuj kod QR z etykiety EMS. Telefon połączy się z EMS przez Bluetooth; połączenie jest szyfrowane, a dostęp daje tylko kod z etykiety tego egzemplarza. Nowe urządzenie jest widoczne od razu. Urządzenie już skonfigurowane ma Bluetooth wyłączony – krótkie naciśnięcie przycisku na EMS włącza go na 5 minut.</p>
+                <img src="../Integrator/img/integrator-bluetooth.png" alt="połączenie z aplikacją przez Bluetooth" class="step-image">
+            </div>
+            <div class="step-card">
+                <span class="step-number">Krok 6</span>
+                <h2>Konfiguracja EMS</h2>
+                <p>W aplikacji: ustaw <strong>hasło instalatora</strong> (co najmniej 8 znaków, inne niż hasła używane gdzie indziej – aplikacja nie pozwoli przejść dalej bez niego), wybierz sieć WiFi i podaj jej hasło, wybierz licznik (np. Sluxer) i uzupełnij parametry sparowanej baterii: moc, pojemność, minSoC i maxSoC.</p>
+            </div>
+            <div class="step-card">
+                <span class="step-number">Krok 7</span>
+                <h2>Konfiguracja falownika</h2>
+                <p>Upewnij się, że w ustawieniach falownika został włączony licznik energii z opcją "Sieć elektryczna". Sprawdź czy w ustawieniach zaawansowanych minSoC oraz maxSoC zgadzają się z ustawieniami EMS. Włącz "tryb zużycia własnego", "zarezerwowny stan naładowania" musi odpowiadać ustawieniu minSoC i minimalny poziom naładowania w EMS  </p>
+                <!-- <img src="../Integrator/img/deye-config.png" alt="meter integrator connection" class="step-image"> -->
+            </div>
+        </div>
+        </div>
+
+
+
+    <div class="container info-section">
+        <h1 style="text-align:center">Bezpieczeństwo i prywatność</h1>
+
+        <h2>Identyfikacja wyrobu</h2>
+        <p>Model: <strong>SLUXER EMS, typ meter</strong>. Producent: Sluxer Polska sp. z o.o.,
+        ul. Piaseczyńska 54, 00-765 Warszawa. Na etykiecie urządzenia znajdziesz model, numer
+        seryjny (SN), <strong>datę produkcji</strong>, oznaczenia CE i WEEE oraz kod QR.</p>
+        <p>Wersję oprogramowania pokazuje aplikacja Sluxer w informacjach o urządzeniu.</p>
+
+        <h2>Kod QR na etykiecie</h2>
+        <p>Kod QR zawiera indywidualne dane dostępowe tego egzemplarza. Nie publikuj jego zdjęcia
+        i nie udostępniaj go osobom, które nie mają obsługiwać instalacji. Kod jest zapisany na
+        stałe w urządzeniu i nie zmienia się po przywróceniu ustawień fabrycznych.</p>
+
+        <h2>Aktualizacje oprogramowania</h2>
+        <ul>
+            <li>Aktualizacje, w tym poprawki bezpieczeństwa, instalują się <strong>automatycznie</strong>
+            przez internet. Nie musisz nic robić; urządzenie po aktualizacji uruchamia się ponownie
+            w kilka sekund i wraca do pracy.</li>
+            <li>Urządzenie przyjmuje wyłącznie oprogramowanie podpisane cyfrowo przez producenta.</li>
+            <li>Aktualizacje bezpieczeństwa zapewniamy przez co najmniej <strong>5 lat od daty
+            produkcji</strong> podanej na etykiecie.</li>
+            <li>Żeby otrzymywać aktualizacje, EMS musi mieć dostęp do internetu przez WiFi.</li>
+        </ul>
+
+        <h2>Co mierzy urządzenie</h2>
+        <p>EMS mierzy wyłącznie wielkości elektryczne w punkcie przyłączenia do sieci (moc, napięcie,
+        prąd, energię) i odczytuje stan falownika oraz magazynu energii. Nie ma kamery, mikrofonu
+        ani czujników obecności. Dane o zużyciu energii mogą jednak pośrednio pokazywać, kiedy ktoś
+        jest w domu, dlatego są przesyłane wyłącznie szyfrowanymi połączeniami. Szczegóły:
+        <a href="../privacy-policy/device/">polityka prywatności urządzeń i usług</a>.</p>
+
+        <h2>Bezpieczna instalacja</h2>
+        <ol>
+            <li>Ustaw własne hasło instalatora (min. 8 znaków) i nie używaj go w innych miejscach.</li>
+            <li>Podłącz EMS do sieci WiFi zabezpieczonej WPA2 lub WPA3.</li>
+            <li>Zachowaj kod QR z etykiety tylko dla siebie (patrz wyżej).</li>
+            <li>Nie włączaj lokalnego panelu WWW, jeśli go nie potrzebujesz. Jest domyślnie wyłączony,
+            a jego włączenie wymaga obecności przy urządzeniu, hasła instalatora i potwierdzenia.</li>
+            <li>Bluetooth jest domyślnie wyłączony; włącza się na 5 minut po naciśnięciu przycisku
+            i tylko wtedy da się zmienić konfigurację.</li>
+        </ol>
+
+        <h2>Jak sprawdzić, że urządzenie jest bezpiecznie skonfigurowane</h2>
+        <p>W aplikacji Sluxer, w informacjach o urządzeniu, sprawdź, że:</p>
+        <ul>
+            <li>urządzenie jest połączone z chmurą Sluxer (dane są aktualne),</li>
+            <li>hasło instalatora jest ustawione (aplikacja nie prosi o jego ustawienie),</li>
+            <li>lokalny panel WWW jest wyłączony, chyba że świadomie go włączyłeś,</li>
+            <li>wersja oprogramowania odpowiada najnowszej (urządzenie aktualizuje się samo).</li>
+        </ul>
+
+        <h2>Przywracanie ustawień fabrycznych</h2>
+        <p>Przywrócenie usuwa z urządzenia całą konfigurację: nazwę i hasło sieci WiFi, hasło
+        instalatora, sparowane baterie, lokalizację, historię pomiarów i ceny. Zostaje tylko dziennik
+        zdarzeń bezpieczeństwa (czas i rodzaj zdarzenia, bez danych osobowych).</p>
+        <ul>
+            <li><strong>Przyciskiem:</strong> naciśnij przycisk dwa razy, a następnie w ciągu 2 sekund
+            naciśnij i przytrzymaj go. Diody migają coraz szybciej, potem świecą ciągle i gasną –
+            wtedy ustawienia są usuwane, a urządzenie uruchamia się ponownie (ok. 6 sekund
+            przytrzymania). Puszczenie przycisku wcześniej przerywa operację.</li>
+            <li><strong>Z aplikacji:</strong> przez Bluetooth, po podaniu hasła instalatora.</li>
+        </ul>
+        <p><strong>Zawsze przywróć ustawienia fabryczne przed sprzedażą lub przekazaniem urządzenia
+        innej osobie.</strong> Następnie usuń urządzenie ze swojego konta albo usuń konto
+        (<a href="../privacy-policy/delete-account/">usuwanie konta</a>).</p>
+
+        <h2>Zgłaszanie problemów bezpieczeństwa</h2>
+        <p>Jeśli zauważysz problem z bezpieczeństwem urządzenia, aplikacji lub usług Sluxer, napisz na
+        <a href="mailto:cyber@sluxer.com">cyber@sluxer.com</a>. Zasady opisuje strona
+        <a href="../security/">Bezpieczeństwo</a>.</p>
+    </div>
+
+        <footer>
+            <p>Przed włączeniem zasilania upewnij się o poprawności wykonanych połączeń elektrycznych.</p>
+            <a href="index.html" class="tab-btn home-btn">Wróć</a>
+        </footer>
+
+    </div>
+
+    <!-- Small JavaScript snippet to handle switching between the two manuals -->
+    <script>
+        function switchSection(sectionId, element) {
+            // Hide all sections
+            document.querySelectorAll('.manual-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            // Remove active style from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show the selected section and activate the clicked button
+            document.getElementById(sectionId).classList.add('active');
+            element.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
